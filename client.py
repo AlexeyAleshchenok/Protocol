@@ -3,9 +3,9 @@ author: Alexey Aleshchenok
 date: 2023-12-05
 Client program that has four commands available
 (to use command enter its name and after space the argument):
-'Dir' - pass to the file to read data from
-'Delete' - pass to the file to delete
-'Copy' - two passes to files separated by comma to copy from one to another
+'Dir' - path to the file to read data from
+'Delete' - path to the file to delete
+'Copy' - two paths to files separated by comma to copy from one to another
 'Execute' - name of the program to execute
 'Take_screenshot' - doesn't need the argument
 'Exit' - doesn't need the argument
