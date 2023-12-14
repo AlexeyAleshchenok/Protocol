@@ -16,7 +16,7 @@ import pyscreenshot
 
 
 def dir_cmd(request):
-    """gets pass to the file and returns data from it """
+    """gets path to the file and returns data from it """
     try:
         request = request.decode()
         directory = os.listdir(r'' + request)
@@ -26,7 +26,7 @@ def dir_cmd(request):
 
 
 def delete_cmd(request):
-    """gets pass to the file and deletes it"""
+    """gets path to the file and deletes it"""
     try:
         file_to_delete = request.decode()
         os.remove(r'' + file_to_delete)
@@ -36,7 +36,7 @@ def delete_cmd(request):
 
 
 def copy_cmd(request):
-    """gets line with two passes to files separated by comma and copy data from first to second"""
+    """gets line with two paths to files separated by comma and copy data from first to second"""
     try:
         files = request.decode().split(',')
         shutil.copy(files[0], files[1])
